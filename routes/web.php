@@ -4,6 +4,10 @@ use Illuminate\Support\Facades\Route;
 use Inertia\Inertia;
 
 Route::get('/', function () {
+//    \Illuminate\Support\Facades\Artisan::call('migrate');
+//    \Illuminate\Support\Facades\Artisan::call('optimize:clear');
+//    \Illuminate\Support\Facades\Artisan::call('route:cache');
+//    \Illuminate\Support\Facades\Artisan::call('cache:clear');
     return Inertia::render('Welcome');
 })->name('home');
 
